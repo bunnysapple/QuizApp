@@ -1,11 +1,27 @@
 import styles from "./start.module.css";
 
-export default function Start({ start, setStart }) {
+export default function Start({ start, setStart, questions, setQuestions }) {
+  function shuffle(data) {
+    for (let i = data.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [data[i], data[j]] = [data[j], data[i]];
+    }
+    console.log(data);
+    return data;
+  }
   return (
     <div className={styles.container}>
       <div className={styles.startContainer}>
         <h2>Start?</h2>
-        <button onClick={() => setStart(!start)}>Go!</button>
+        <button
+          onClick={() => {
+            const newQuestions = shuffle(questions);
+            setQuestions(newQuestions);
+            setStart(!start);
+          }}
+        >
+          Go!
+        </button>
       </div>
     </div>
   );

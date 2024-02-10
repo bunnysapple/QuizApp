@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "question": "How many bones are there in a human body?",
+      "answer": "206",
+      "image": "../pictures/happybones.png"
+    },
+    {
+      "question": "What is mitochondria?",
+      "answer": "The powerhouse of the cell",
+      "image": "../pictures/mitochondria.png"
+    },
+    {
+      "question": "How many days does it take for the Earth to orbit the Sun?",
+      "answer": "365",
+      "image": "../pictures/earth.png"
+    },
+    {
+      "question": "What year was the World Wide Web invented?",
+      "answer": "1990",
+      "image": "../pictures/worldwideweb.png"
+    },
+    {
+      "question": "Which mountain range is the Mount Everest located in?",
+      "answer": "The Himalayas",
+      "image": "../pictures/mountain.png"
+    },
+    {
+      "question": "Which country has the largest population?",
+      "answer": "China",
+      "image": "../pictures/countries.png"
+    },
+    {
+      "question": "Who is known as the fastest man in the world?",
+      "answer": "Usain Bolt",
+      "image": "../pictures/fast.png"
+    },
+    {
+      "question": "Which chemical element is represented by the symbol \"C\" in the periodic table of elements?",
+      "answer": "Carbon",
+      "image": "../pictures/chemical.png"
+    },
+    {
+      "question": "What is the smallest prime number greater than 10?",
+      "answer": "11",
+      "image": "../pictures/numbers.png"
+    },
+    {
+      "question": "In Greek Mythology, who is the goddess of wisdom and warfare?",
+      "answer": "Athena",
+      "image": "../pictures/greekgod.png"
+    },
+    {
+      "question": "Where is the Taj Mahal located?",
+      "answer": "India",
+      "image": "../pictures/tajmahal.png"
+    },
+    {
+      "question": "What is your body's largest organ?",
+      "answer": "Skin",
+      "image": "../pictures/organs.png"
+    },
+    {
+      "question": "When did World War 1 end?",
+      "answer": "1918",
+      "image": "../pictures/war.png"
+    }
+  ]
+}
