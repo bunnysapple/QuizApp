@@ -1,0 +1,14 @@
+.container {
+  margin: 2%;
+}
+
+.startContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
