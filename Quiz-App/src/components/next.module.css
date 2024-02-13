@@ -1,0 +1,11 @@
+.next {
+  width: 60vw;
+  color: blue;
+  text-align: right;
+  padding: 0 2em;
+}
+
+.next:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

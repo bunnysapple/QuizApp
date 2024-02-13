@@ -6,4 +6,5 @@ body {
 
 .everything {
   background: linear-gradient(#ff9966, #ff5e62);
+  height: 100svh;
 }

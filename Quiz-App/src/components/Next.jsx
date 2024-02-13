@@ -1,3 +1,5 @@
+import styles from "./next.module.css";
+
 export default function Next({
   questions,
   num,
@@ -17,5 +19,9 @@ export default function Next({
     setAnswered(false);
     setClicked(false);
   }
-  return <div onClick={() => check()}>next -{">"}</div>;
+  return (
+    <div className={styles.next} onClick={() => check()}>
+      next -{">"}
+    </div>
+  );
 }
