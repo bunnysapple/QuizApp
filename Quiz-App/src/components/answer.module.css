@@ -1,4 +1,7 @@
 .answerBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: fit-content;
   margin-bottom: 1em;
   z-index: 999;
@@ -6,7 +9,7 @@
 
 .button {
   padding: 1em;
-  margin: 1em;
+  margin: 0.5em;
   font-weight: bold;
   border: none;
   border-radius: 10px;

@@ -18,7 +18,7 @@
 }
 
 .small {
-  font-size: 0.6em;
+  font-size: 0.8em;
   position: absolute;
 }
 .medium {
@@ -93,6 +93,71 @@
 .floater:nth-child(16) {
   left: 48%;
   animation: float-two 13s linear 4s infinite;
+}
+
+.floater:nth-child(17) {
+  left: 52%;
+  animation: float-one 10s linear 5s infinite;
+}
+.floater:nth-child(18) {
+  left: 54%;
+  animation: float-two 12s linear 2s infinite;
+}
+.floater:nth-child(19) {
+  left: 58%;
+  animation: float-three 11s linear 6s infinite;
+}
+.floater:nth-child(20) {
+  left: 61%;
+  animation: float-one 8s linear infinite;
+}
+.floater:nth-child(21) {
+  left: 63%;
+  animation: float-two 8s linear 3s infinite;
+}
+.floater:nth-child(22) {
+  left: 65%;
+  animation: float-one 7s linear 0.3s infinite;
+}
+.floater:nth-child(23) {
+  left: 69%;
+  animation: float-three 12s linear 1s infinite;
+}
+.floater:nth-child(24) {
+  left: 73%;
+  animation: float-one 9s linear 6s infinite;
+}
+.floater:nth-child(25) {
+  left: 76%;
+  animation: float-three 13s linear 2s infinite;
+}
+.floater:nth-child(26) {
+  left: 78%;
+  animation: float-two 9s linear infinite;
+}
+.floater:nth-child(27) {
+  left: 81%;
+  animation: float-two 10s linear 3s infinite;
+}
+.floater:nth-child(28) {
+  left: 84%;
+  animation: float-one 8s linear 0.8s infinite;
+}
+.floater:nth-child(29) {
+  left: 87%;
+  animation: float-two 12s linear 2s infinite;
+}
+.floater:nth-child(30) {
+  left: 91%;
+  animation: float-three 11s linear infinite;
+}
+.floater:nth-child(31) {
+  left: 94%;
+  animation: float-two 13s linear 6s infinite;
+}
+.floater:nth-child(5) {
+  left: 98%;
+  animation: float-three 12s linear 2s infinite;
 }
 
 @keyframes float-one {

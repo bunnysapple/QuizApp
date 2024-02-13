@@ -10,7 +10,7 @@ import Floaters from "./components/Floaters";
 function App() {
   const [questions, setQuestions] = useState(Data.questions);
   const [start, setStart] = useState(false);
-  const [finish, setFinish] = useState(false);
+  const [finish, setFinish] = useState(true);
   const [num, setNum] = useState(0);
   const [score, setScore] = useState(0);
   const [options, setOptions] = useState([]);
@@ -30,6 +30,10 @@ function App() {
   useEffect(() => {
     setChange(true);
   }, [num]);
+  useEffect(() => {
+    console.log(start);
+    console.log(finish);
+  }, [start, finish]);
 
   return (
     <div className="everything">
@@ -48,7 +52,7 @@ function App() {
           setClicked={setClicked}
         />
       ) : finish ? (
-        <FinalScore score={score} />
+        <FinalScore score={score} setFinish={setFinish} setStart={setStart} />
       ) : (
         <Start
           start={start}

@@ -1,0 +1,14 @@
+.box {
+  z-index: 999;
+  position: relative;
+  align-self: center;
+}
+
+.button {
+  z-index: 999;
+  width: 3vw;
+}
+
+.button:hover {
+  cursor: pointer;
+}
