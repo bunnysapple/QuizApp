@@ -4,30 +4,37 @@ import styles from "./answer.module.css";
 export default function Answer({
   questions,
   num,
+  score,
   answers,
   setAnswered,
   clicked,
   setClicked,
+  setScore,
 }) {
   const answer = questions[num]["answer"];
   const color = [
-    check(answers[0]),
-    check(answers[1]),
-    check(answers[2]),
-    check(answers[3]),
+    colorSetter(answers[0]),
+    colorSetter(answers[1]),
+    colorSetter(answers[2]),
+    colorSetter(answers[3]),
   ];
   console.log(color);
-  function check(guess) {
+  function colorSetter(guess) {
     return clicked
       ? answer === guess
         ? styles.correct
         : styles.incorrect
       : "";
   }
+  function check(guess) {
+    answer === guess ? setScore((score += 1)) : "";
+  }
   return (
     <div className={styles.answerBox}>
       <button
         onClick={() => {
+          if (clicked) return;
+          check(answers[0]);
           setClicked(true);
           setAnswered(true);
         }}
@@ -37,6 +44,8 @@ export default function Answer({
       </button>
       <button
         onClick={() => {
+          if (clicked) return;
+          check(answers[1]);
           setClicked(true);
           setAnswered(true);
         }}
@@ -46,6 +55,8 @@ export default function Answer({
       </button>
       <button
         onClick={() => {
+          if (clicked) return;
+          check(answers[2]);
           setClicked(true);
           setAnswered(true);
         }}
@@ -55,6 +66,8 @@ export default function Answer({
       </button>
       <button
         onClick={() => {
+          if (clicked) return;
+          check(answers[3]);
           setClicked(true);
           setAnswered(true);
         }}

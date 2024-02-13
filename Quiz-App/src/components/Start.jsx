@@ -1,6 +1,12 @@
 import styles from "./start.module.css";
 
-export default function Start({ start, setStart, questions, setQuestions }) {
+export default function Start({
+  start,
+  setStart,
+  questions,
+  setQuestions,
+  setChange,
+}) {
   function shuffle(data) {
     for (let i = data.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -19,6 +25,7 @@ export default function Start({ start, setStart, questions, setQuestions }) {
             const newQuestions = shuffle(questions);
             setQuestions(newQuestions);
             setStart(!start);
+            setChange(true);
           }}
         >
           Go!

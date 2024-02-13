@@ -3,6 +3,7 @@
   color: blue;
   text-align: right;
   padding: 0 2em;
+  z-index: 999;
 }
 
 .next:hover {

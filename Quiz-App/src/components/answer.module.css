@@ -1,6 +1,7 @@
 .answerBox {
   width: fit-content;
   margin-bottom: 1em;
+  z-index: 999;
 }
 
 .button {
@@ -20,7 +21,9 @@
 
 .correct {
   background-color: rgb(87, 189, 130);
+  color: white;
 }
 .incorrect {
   background-color: rgb(189, 87, 87);
+  color: white;
 }
