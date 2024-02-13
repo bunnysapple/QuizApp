@@ -23,7 +23,7 @@ function App() {
   }, [questions]);
 
   return (
-    <div>
+    <div className="everything">
       <Header start={start} />
       {start ? (
         <Game

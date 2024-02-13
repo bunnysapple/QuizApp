@@ -1,4 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.everything {
+  background: linear-gradient(#ff9966, #ff5e62);
 }

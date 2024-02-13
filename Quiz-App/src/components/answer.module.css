@@ -19,8 +19,8 @@
 }
 
 .correct {
-  background-color: green;
+  background-color: rgb(87, 189, 130);
 }
 .incorrect {
-  background-color: red;
+  background-color: rgb(189, 87, 87);
 }
