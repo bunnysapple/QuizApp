@@ -1,14 +1,35 @@
 .container {
-  margin: 2%;
-}
-
-.startContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 80svh;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  font-size: 2em;
+}
+
+.startBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+}
+
+.startBox h2 {
+  margin: 0;
+}
+
+.startButton {
+  padding: 0.2em 0.5em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.75em;
+  width: fit-content;
+}
+
+.startButton:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

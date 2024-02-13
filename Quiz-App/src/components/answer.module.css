@@ -1,0 +1,26 @@
+.answerBox {
+  width: fit-content;
+  margin-bottom: 1em;
+}
+
+.button {
+  padding: 1em;
+  margin: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.correct {
+  background-color: green;
+}
+.incorrect {
+  background-color: red;
+}

@@ -11,9 +11,10 @@ export default function Start({ start, setStart, questions, setQuestions }) {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.startContainer}>
+      <div className={styles.startBox}>
         <h2>Start?</h2>
         <button
+          className={styles.startButton}
           onClick={() => {
             const newQuestions = shuffle(questions);
             setQuestions(newQuestions);

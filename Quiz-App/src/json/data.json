@@ -2,68 +2,91 @@
   "questions": [
     {
       "question": "How many bones are there in a human body?",
+      "options": ["210", "216", "206", "208"],
       "answer": "206",
-      "image": "../pictures/happybones.png"
+      "image": "./pictures/happybones.png"
     },
     {
-      "question": "What is mitochondria?",
-      "answer": "The powerhouse of the cell",
-      "image": "../pictures/mitochondria.png"
+      "question": "What is the function of mitochondria?",
+      "options": [
+        "Generate energy",
+        "Photosynthesis",
+        "Contain DNA",
+        "Make proteins"
+      ],
+      "answer": "Generate energy",
+      "image": "./pictures/mitochondria.jpg"
     },
     {
       "question": "How many days does it take for the Earth to orbit the Sun?",
+      "options": ["320", "356", "365", "366"],
       "answer": "365",
-      "image": "../pictures/earth.png"
+      "image": "./pictures/earth.jpg"
     },
     {
       "question": "What year was the World Wide Web invented?",
+      "options": ["2001", "1990", "1988", "2004"],
       "answer": "1990",
-      "image": "../pictures/worldwideweb.png"
+      "image": "./pictures/worldwideweb.jpg"
     },
     {
       "question": "Which mountain range is the Mount Everest located in?",
-      "answer": "The Himalayas",
-      "image": "../pictures/mountain.png"
+      "options": ["Alps", "Andes", "Himalayas", "Atlas Mountains"],
+      "answer": "Himalayas",
+      "image": "./pictures/mountain.jpg"
     },
     {
       "question": "Which country has the largest population?",
+      "options": ["India", "Russia", "China", "America"],
       "answer": "China",
-      "image": "../pictures/countries.png"
+      "image": "./pictures/countries.jpg"
     },
     {
       "question": "Who is known as the fastest man in the world?",
+      "options": [
+        "Florence Griffith-Joyner",
+        "Tyson Gay",
+        "Usain Bolt",
+        "Yohan Blake"
+      ],
       "answer": "Usain Bolt",
-      "image": "../pictures/fast.png"
+      "image": "./pictures/fast.jpg"
     },
     {
-      "question": "Which chemical element is represented by the symbol \"C\" in the periodic table of elements?",
+      "question": "What chemical Element is represented by \"C\"?",
+      "options": ["Calcium", "Carbon", "Chromium", "Chlorine"],
       "answer": "Carbon",
-      "image": "../pictures/chemical.png"
+      "image": "./pictures/chemical.jpg"
     },
     {
       "question": "What is the smallest prime number greater than 10?",
+      "options": ["2", "13", "11", "17"],
       "answer": "11",
-      "image": "../pictures/numbers.png"
+      "image": "./pictures/numbers.jpg"
     },
     {
-      "question": "In Greek Mythology, who is the goddess of wisdom and warfare?",
+      "question": "Who represents wisdom and warfare in greek myths?",
+      "options": ["Ares", "Odysseus", "Athena", "Apollo"],
       "answer": "Athena",
-      "image": "../pictures/greekgod.png"
+      "image": "./pictures/greekgod.jpg"
     },
     {
       "question": "Where is the Taj Mahal located?",
+      "options": ["China", "Indonesia", "Japan", "India"],
       "answer": "India",
-      "image": "../pictures/tajmahal.png"
+      "image": "./pictures/tajmahal.jpg"
     },
     {
       "question": "What is your body's largest organ?",
+      "options": ["Large Intestine", "Skin", "Small Intestine", "Liver"],
       "answer": "Skin",
-      "image": "../pictures/organs.png"
+      "image": "./pictures/organs.jpg"
     },
     {
       "question": "When did World War 1 end?",
+      "options": ["1914", "1948", "1918", "1924"],
       "answer": "1918",
-      "image": "../pictures/war.png"
+      "image": "./pictures/war.jpg"
     }
   ]
 }

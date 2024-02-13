@@ -1,0 +1,34 @@
+.questionContainer {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  max-width: 60vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  margin-bottom: 2em;
+}
+
+.questionBox {
+  font-size: 1.5em;
+  width: fit-content;
+  border-bottom: 2px solid yellow;
+  text-align: center;
+}
+
+.question {
+  margin: 0;
+}
+
+.imageBox {
+  height: 10em;
+  width: min-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.image {
+  height: 100%;
+  border-radius: 5px;
+}
