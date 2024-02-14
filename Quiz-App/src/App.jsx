@@ -10,9 +10,10 @@ import Floaters from "./components/Floaters";
 function App() {
   const [questions, setQuestions] = useState(Data.questions);
   const [start, setStart] = useState(false);
-  const [finish, setFinish] = useState(true);
+  const [finish, setFinish] = useState(false);
   const [num, setNum] = useState(0);
   const [score, setScore] = useState(0);
+  const [correct, setCorrect] = useState(false);
   const [options, setOptions] = useState([]);
   const [clicked, setClicked] = useState(false);
   const [change, setChange] = useState(true);
@@ -27,6 +28,9 @@ function App() {
     setOptions(shuffle(questions[num]["options"]));
     setChange(false);
   }
+  function colorSetter() {
+    return clicked ? (correct ? "correct" : "incorrect") : "default";
+  }
   useEffect(() => {
     setChange(true);
   }, [num]);
@@ -36,8 +40,8 @@ function App() {
   }, [start, finish]);
 
   return (
-    <div className="everything">
-      <Header start={start} />
+    <div className={`everything ${colorSetter()}`}>
+      <Header start={start} finish={finish} />
       {start ? (
         <Game
           questions={questions}
@@ -45,14 +49,22 @@ function App() {
           num={num}
           score={score}
           clicked={clicked}
+          correct={correct}
           setNum={setNum}
           setStart={setStart}
           setFinish={setFinish}
           setScore={setScore}
           setClicked={setClicked}
+          setCorrect={setCorrect}
         />
       ) : finish ? (
-        <FinalScore score={score} setFinish={setFinish} setStart={setStart} />
+        <FinalScore
+          score={score}
+          setFinish={setFinish}
+          setStart={setStart}
+          setNum={setNum}
+          setScore={setScore}
+        />
       ) : (
         <Start
           start={start}

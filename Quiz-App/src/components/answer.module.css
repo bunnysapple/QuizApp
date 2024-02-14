@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   width: fit-content;
   margin-bottom: 1em;
+  min-height: max-content;
   z-index: 999;
 }
 

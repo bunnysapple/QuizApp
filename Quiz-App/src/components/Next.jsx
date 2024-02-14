@@ -3,12 +3,14 @@ import styles from "./next.module.css";
 export default function Next({
   questions,
   num,
+  correct,
   setNum,
   setStart,
   setFinish,
   setAnswered,
   setClicked,
 }) {
+  const color = correct ? styles.correct : styles.incorrect;
   function check() {
     if (num === questions.length - 1) {
       setStart(false);
@@ -20,8 +22,10 @@ export default function Next({
     setClicked(false);
   }
   return (
-    <div className={styles.next} onClick={() => check()}>
-      next -{">"}
+    <div className={styles.next}>
+      <button className={`${styles.button} ${color}`} onClick={() => check()}>
+        Next
+      </button>
     </div>
   );
 }

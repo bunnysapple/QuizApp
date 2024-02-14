@@ -10,11 +10,13 @@ export default function Game({
   num,
   score,
   clicked,
+  correct,
   setNum,
   setStart,
   setFinish,
   setScore,
   setClicked,
+  setCorrect,
 }) {
   const [answered, setAnswered] = useState(false);
   return (
@@ -29,11 +31,13 @@ export default function Game({
         clicked={clicked}
         setClicked={setClicked}
         setScore={setScore}
+        setCorrect={setCorrect}
       />
       {answered ? (
         <Next
           questions={questions}
           num={num}
+          correct={correct}
           setNum={setNum}
           setStart={setStart}
           setFinish={setFinish}

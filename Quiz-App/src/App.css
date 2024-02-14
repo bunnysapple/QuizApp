@@ -5,10 +5,20 @@ body {
 }
 
 .everything {
-  background: linear-gradient(#ff9966, #ff5e62);
+  background: linear-gradient(#d7b43f, #d66317);
   height: 100svh;
   max-width: 100svw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.default {
+  background: linear-gradient(#ff7711, #cd4831);
+}
+.correct {
+  background: linear-gradient(#11ddaa, #29a03b);
+}
+.incorrect {
+  background: linear-gradient(#dd4263, #9a2b42);
 }

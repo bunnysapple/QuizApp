@@ -10,6 +10,7 @@ export default function Answer({
   clicked,
   setClicked,
   setScore,
+  setCorrect,
 }) {
   const answer = questions[num]["answer"];
   const color = [
@@ -27,7 +28,12 @@ export default function Answer({
       : "";
   }
   function check(guess) {
-    answer === guess ? setScore((score += 1)) : "";
+    if (answer === guess) {
+      setScore((score += 1));
+      setCorrect(true);
+    } else {
+      setCorrect(false);
+    }
   }
   return (
     <div className={styles.answerBox}>

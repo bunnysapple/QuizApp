@@ -2,13 +2,32 @@
   z-index: 999;
   position: relative;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.buttonDiv {
+  display: flex;
 }
 
 .button {
   z-index: 999;
   width: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .button:hover {
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }

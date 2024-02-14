@@ -17,6 +17,10 @@
   bottom: -3em;
 }
 
+.floater:hover {
+  cursor: default;
+}
+
 .small {
   font-size: 0.8em;
   position: absolute;
@@ -35,16 +39,16 @@
   animation: float-one 13s linear 1s infinite;
 }
 .floater:nth-child(2) {
-  left: 5%;
+  left: 4%;
   animation: float-two 8s linear 5s infinite;
 }
 .floater:nth-child(3) {
-  left: 3%;
+  left: 7%;
   animation: float-three 9s linear 2s infinite;
 }
 .floater:nth-child(4) {
   left: 10%;
-  animation: float-two 10s linear infinite;
+  animation: float-one 10s linear 2s infinite;
 }
 .floater:nth-child(5) {
   left: 13%;
@@ -133,7 +137,7 @@
 }
 .floater:nth-child(26) {
   left: 78%;
-  animation: float-two 9s linear infinite;
+  animation: float-two 9s linear 2s infinite;
 }
 .floater:nth-child(27) {
   left: 81%;
